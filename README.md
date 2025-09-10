@@ -1,5 +1,16 @@
 # 📧 Email Sentiment Analysis with LangChain & NVIDIA LLM
 
+## 📌 Project Description
+This project analyzes customer emails using **LangChain**, **NVIDIA AI Endpoints**, and **LangGraph** to extract structured insights.  
+The pipeline performs:  
+1. **Sentiment Analysis** – Determines whether each email is *positive* or *negative*.  
+2. **Entity Extraction** – Identifies the **location (city)** and **product category** mentioned in each email.  
+3. **Aggregated Insights** – Finds the **most negatively mentioned product category** and the **location with the highest number of negative mentions**.  
+
+The final output is a structured JSON object plus a summary of key negative trends.  
+
+---
+
 ## ⚡ Key Features
 - Uses **Meta LLaMA 3.1 (8B Instruct)** via `ChatNVIDIA`.  
 - Converts unstructured email text into structured JSON with fields:  
